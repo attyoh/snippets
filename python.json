@@ -1,0 +1,96 @@
+{
+	"main" : {
+		"prefix" : "main",
+		"body" : [
+			"def main():",
+			"    $1",
+			"",
+			"if __name__ == '__main__':",
+			"    main()"
+		]
+	},
+	"itertools" : {
+		"prefix" : "iter",
+		"body" : [
+			"from itertools import *"
+		]
+	},
+	"input().split()" : {
+		"prefix" : "is",
+		"body" : [
+			"input().split()"
+		]
+	},
+	"map(int, input().split())" : {
+		"prefix" : "mis",
+		"body" : [
+			"map(int, input().split())"
+		]
+	},
+	"list(map(int, input().split()))" : {
+		"prefix" : "lis",
+		"body" : [
+			"list(map(int, input().split()))"
+		]
+	},
+	"[input() for _ in range($1)]" : {
+		"prefix" : "fi",
+		"body" : [
+			"[input() for _ in range($1)]"
+		]
+	},
+	"[input().split() for _ in range($1)]" : {
+		"prefix" : "fis",
+		"body" : [
+			"[input().split() for _ in range($1)]"
+		]
+	},
+	"range_for" : {
+		"prefix" : "rfor",
+		"body" : [
+			"for $1 in range($2):",
+			"    $3"
+		]
+	},
+	"list_for" : {
+		"prefix" : "lfor",
+		"body" : [
+			"for $1 in $2:",
+			"    $3"
+		]
+	},
+	"double_for" : {
+		"prefix" : "ffor",
+		"body" : [
+			"for $1 in $2:",
+			"    for $3 in $4:",
+			"        $5"
+		]
+	},
+	"itertools.permutations(iterable, r)" : {
+		"prefix" : "iterp",
+		"body" : [
+			"itertools.permutations($1, $2)"
+		]
+	},
+	"itertools.combinations(iterable, r)" : {
+		"prefix" : "iterc",
+		"body" : [
+			"itertools.combinations($1, $2)"
+		]
+	},
+	"accumulate(iterable" : {
+		"prefix" : "acc",
+		"body" : [
+			"accumulate($1)"
+		],
+        "description": "累積和"
+	},
+	"chain.from_iterable(iterable)" : {
+		"prefix" : "chain",
+		"body" : [
+			"chain.from_iterable($1)"
+		],
+        "description": "二次元配列での平坦化など"
+	}
+}

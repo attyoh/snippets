@@ -1,0 +1,491 @@
+{	
+	"cout" : {
+		"prefix" : "cout",
+		"body" : [
+			"cout << $1 << endl;"
+		]
+	},
+	"ccout" : {
+		"prefix" : "ccout",
+		"body" : [
+			"cout << $1 << ' ' << $2 << endl;"
+		]
+	},
+	"cccout" : {
+		"prefix" : "cccout",
+		"body" : [
+			"cout << $1 << ' ' << $2 << ' ' << $3 << endl;"
+		]
+	},
+	"printf" : {
+		"prefix" : "printf",
+		"body" : [
+			"printf(\"%d %d\", $1, $2);"
+		]
+	},
+	"cin" : {
+		"prefix" : "cin",
+		"body" : [
+			"cin >> $1;"
+		]
+	},	
+	"ccin" : {
+		"prefix" : "ccin",
+		"body" : [
+			"cin >> $1 >> $2;"
+		]
+	},
+	"cccin" : {
+		"prefix" : "cccin",
+		"body" : [
+			"cin >> $1 >> $2 >> $3;"
+		]
+	},
+	"vector" : {
+		"prefix" : "vec",
+		"body" : [
+			"vector<$1> $2;"
+		]
+	},
+	"vector<int>" : {
+		"prefix" : "vi",
+		"body" : [
+			"vector<int> $1($2);"
+		]
+	},
+	"vector<string>" : {
+		"prefix" : "vs",
+		"body" : [
+			"vector<string> $1($2);"
+		]
+	},
+	"vector<string> string" : {
+		"prefix" : "vss",
+		"body" : [
+			"vector<string> $1($2, string($3, '$4'));"
+		]
+	},
+	"vector<bool>" : {
+		"prefix" : "vb",
+		"body" : [
+			"vector<bool> $1;"
+		]
+	},
+	"vector<P>" : {
+		"prefix" : "vp",
+		"body" : [
+			"vector<P> p;"
+		]
+	},
+	"vector<vector<>>" : {
+		"prefix" : "vvec",
+		"body" : [
+			"vector<vector<$1>> $2($3, vector<$1>($4));"
+		]
+	},
+	"vector<vector<int>>" : {
+		"prefix" : "vvi",
+		"body" : [
+			"vector<vector<int>> $1($2, vector<int>($3));"
+		]
+	},
+	"vector<vector<string>>" : {
+		"prefix" : "vvs",
+		"body" : [
+			"vector<vector<string>> $1($2, vector<string>($3, string($4, '$5'));"
+		]
+	},
+	"vector<vector<vector<>>>" : {
+		"prefix" : "vvvec",
+		"body" : [
+			"vector<vector<vector<$1>>> $2($3, vector<vector<$1>>($4, vector<$1>($5)));"
+		]
+	},
+	"for" : {
+		"prefix" : "for",
+		"body" : [
+			"for (int ${1:i} = ${2:0}; ${1:i} < ${3:N}; ++${1:i}) {$4}"
+		]
+	},
+  "rep" : {
+    "prefix" : "rep",
+    "body" : [
+      "rep(${1:i},${2:n}) $3"
+    ]
+  },
+  "rep1" : {
+	"prefix" : "rep1",
+	"body" : [
+		"rep1(${1:i},${2:n}) $3"
+	]
+  },
+  "rrep" : {
+    "prefix" : "rrep",
+    "body" : [
+      "rep(${1:i},${2:h}) rep(${3:j},${4:w}) {",
+	  "  $5",
+	  "}"
+    ]
+  },
+	"long long" : {
+		"prefix" : "ll",
+		"body" : [
+			"long long $1;"
+		]
+	},
+	"pair" : {
+		"prefix" : "pair",
+		"body" : [
+			"pair<$1, ${2:$1}> $3;"
+		]
+	},
+	"using pair" : {
+		"prefix" : "using p",
+		"body" : [
+			"using P = pair<$1, ${2:$1}>;"
+		]
+	},
+	"using mint" : {
+		"prefix" : "mint",
+		"body" : [
+			"using mint = modint998244353;"
+		]
+	},
+	"x.begin(),x.ene()" : {
+		"prefix" : "all",
+		"body" : [
+			"$1.begin(), $1.end()"
+        ]
+	},
+	"set" : {
+		"prefix" : "set",
+		"body" : [
+			"set<$1> $2;"
+		]
+	},
+	"unordered_set" : {
+		"prefix" : "uset",
+		"body" : [
+			"unordered_set<$1> $2;"
+		]
+	},
+	"insert" : {
+		"prefix" : "ins",
+		"body" : [
+			"insert($1);"
+		]
+	},
+	"push_back" : {
+		"prefix" : "pb",
+		"body" : [
+			"push_back($1);"
+		]
+	},
+	"emplace_back" : {
+		"prefix" : "eb",
+		"body" : [
+			"emplace_back($1);"
+		]
+	},
+	"priority_queue" : {
+		"prefix" : "pq",
+		"body" : [
+			"priority_queue<$1> $2;"
+		]
+	},
+	"lambda expressions" : {
+		"prefix" : "lam",
+		"body" : [
+			"auto $1 = [&]($2) {",
+			"  $3",
+			"};"
+		]
+	},
+	"exchange_decimal_number" : {
+		"prefix" : "ten",
+		"body" : [
+			"auto ten = [&](string s) {",
+			"  ll x = 0;",
+			"for (char c : s) x = x*2+(c-'0');",
+			"return x;",
+			"};"
+		],
+        "description": "10進数変換"
+	},
+	"sort" : {
+		"prefix" : "sort",
+		"body" : [
+			"sort($1.begin(), $1.end());"
+		]
+	},
+	"rsort" : {
+		"prefix" : "rsort",
+		"body" : [
+			"sort($1.begin(), $1.end(), greater<int>());"
+		]
+	},
+	"rotate" : {
+		"prefix" : "rot",
+		"body" : [
+			"rotate($1.begin(), $1.begin()+$2, $1.end());"
+		]
+	},
+	"vmax" : {
+		"prefix" : "vmax",
+		"body" : [
+			"*max_element($1.begin(), $1.end());"
+		]
+	},
+	"vmin" : {
+		"prefix" : "vmin",
+		"body" : [
+			"*min_element($1.begin(), $1.end());"
+		]
+	},
+	"find" : {
+		"prefix" : "find",
+		"body" : [
+			"find($1.begin(), $1.end(), $2);"
+		]
+	},
+	"reverse" : {
+		"prefix" : "rev",
+		"body" : [
+			"reverse($1.begin(), $1.end());"
+		]
+	},
+	"8move" : {
+		"prefix" : "8move",
+		"body" : [
+			"int di[] = {1,0,-1,0,1,-1,-1,1};",
+			"int dj[] = {0,1,0,-1,1,1,-1,-1};"
+		]
+	},
+	"next_permutation" : {
+		"prefix" : "np",
+		"body" : [
+			"sort($1.begin(), $1.end());",
+			"do{",
+			"  $2",
+			"} while(next_permutation($1.begin(), $1.end());"
+		]
+	},
+	"lower_bound" : {
+		"prefix" : "lb",
+		"body" : [
+			"lower_bound($1.begin(), $1.end(), $2) - $1.begin();"
+		]
+	},
+	"upper_bound" : {
+		"prefix" : "ub",
+		"body" : [
+			"upper_bound($1.begin(), $1.end(), $2) - $1.begin();"
+		]
+	},
+	"chmin" : {
+		"prefix" : "chmin",
+		"body" : [
+			"template<typename T> inline bool chmin(T &a, const T& b) { return ((a > b) ? (a = b, true) : (false)); };"
+		]
+	},
+	"chmax" : {
+		"prefix" : "chmax",
+		"body" : [
+			"template<typename T> inline bool chmax(T &a, const T& b) { return ((a < b) ? (a = b, true) : (false)); };"
+		]
+	},
+	"vector_debug" : {
+		"prefix" : "vdeg",
+		"body" : [
+			"for(auto e : $1) cout << e << ' ';"
+		]
+	},
+	"vector<vector>_debug" : {
+		"prefix" : "vvdeg",
+		"body" : [
+			"for(int i=0; i<$1.size(); ++i){",
+			"  for(int j=0; j<$1[0].size(); ++j){",
+			"    cout << $1[i][j] << ' ';",
+			"  }",
+			"  cout << endl;",
+			"}"
+		]
+	},
+	"INF" : {
+		"prefix" : "inf",
+		"body" : [
+			"const int INF = 1001001001;"
+		]
+	},
+	"ACL" : {
+		"prefix" : "acl",
+		"body" : [
+			"#include <atcoder/all>",
+			"using namespace atcoder;"
+		]
+	},
+	"isPalindrome" : {
+		"prefix" : "ispal",
+		"body" : [
+			"auto isPalindrome(string s) -> bool {",
+			"  string t = s;",
+			"  reverse(t.begin(), t.end());",
+			"  return s == t;",
+			"}"
+		]
+	},
+	"bfs" : {
+		"prefix" : "bfs",
+		"body" : [
+			"auto bfs = [&](int sv) {",
+			"  const int INF = 1001001001;",
+			"  vector<int> dist(n, INF);",
+			"  queue<int> q;",
+			"  q.push(sv); dist[sv] = 0;",
+			"  while(!q.empty()) {",
+			"    int v = q.front(); q.pop();",
+			"    for (int u : to[v]) {",
+			"      if (dist[u] != INF) continue;",
+			"      dist[u] = dist[v] + 1;",
+			"      q.push(u);",
+			"    }",
+			"  }",
+			"  return dist;",
+			"};"
+		]
+	},
+	"dfs" : {
+		"prefix" : "dfs",
+		"body" : [
+			"auto dfs = [&](auto dfs, $1) -> void {",
+			"  $2",
+			"};",
+			"dfs(dfs, 0);"
+		]
+	},
+	"main()" : {
+		"prefix" : "main",
+		"body" : [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+            "#define rep(i,n) for (int i = 0; i < (n); ++i)",
+			"#define rep1(i,n) for(int i = 1; i <= (n); ++i)",
+			"using P = pair<int, int>;",
+			"using ll = long long;",
+			"",
+			"int main() {",
+			"  $1",
+		    "  return 0;",
+			"}"
+		]
+	},
+	"union find" : {
+		"prefix" : "uf",
+		"body" : [
+			"int n, m;",
+			"cin >> n >> m;",
+			"",
+			"dsu uf(n);",
+			"rep(i,m) {",
+			"  int u, v;",
+			"  cin >> u >> v;",
+			"  u--; v--;",
+			"  uf.merge(u,v);$1",
+			"}",
+			"",
+			"$2"
+		]
+	},
+	"graph" : {
+		"prefix" : "graph",
+		"body" : [
+			"int n, m;",
+			"cin >> n >> m;",
+			"vector<vector<int>> to(n);",
+
+			"rep(i,m) {",
+			"  int a, b;",
+			"  cin >> a >> b;",
+			"  --a; --b;",
+			"  to[a].push_back(b);",
+			"  to[b].push_back(a);",
+			"}"
+		]
+	},
+	"solve" : {
+		"prefix" : "solve",
+		"body" : [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+            "#define rep(i,n) for (int i = 0; i < (n); ++i)",
+			"#define rep1(i,n) for(int i = 1; i <= (n); ++i)",
+			"using P = pair<int, int>;",
+			"using ll = long long;",
+			"",
+			"bool solve() {",
+			"  $1",
+			"}",
+			"",
+			"int main() {",
+			"  cout << (solve() ? \"Yes\" : \"No\");",
+		    "  return 0;",
+			"}"
+		]
+	},
+	"query" : {
+		"prefix" : "query",
+		"body" : [
+			"int Q;",
+			"cin >> Q;",
+			"",
+			"rep(qi,Q) {",
+			"  int type;",
+			"  cin >> type;",
+			"  if (type == 1) {",
+			"    int x;",
+			"    cin >> x;",
+			"    $1;",
+			"  }",
+			"  if (type == 2) {",
+			"    $2",
+			"  }",
+			"  if (type == 3) {",
+			"    $3",
+			"  }",
+			"}",
+			"",
+			"$4"
+		]
+	},
+	"square" : {
+		"prefix" : "square",
+		"body" : [
+			"int h, w;",
+			"cin >> h >> w;",
+			"vector<string> s(h);",
+			"rep(i,h) cin >> s[i];",
+			"",
+			"// 検出した四角形の走査",
+			"auto scan = [&](int li, int lj, int ri, int rj) {",
+			"  for (int i=li; i<=ri; ++i) {",
+			"    for (int j=lj; j<=rj; ++j) {",
+			"      $1",
+			"    }",
+			"  }",
+			"};",
+			"",
+			"// 四角形の左上と右下検出",
+			"int li = h, lj = w, ri = 0, rj = 0;",
+			"rep(i,h) rep(j,w) {",
+			"  if (s[i][j] == '#'){",
+			"  li = min(i, li);",
+			"  lj = min(j, lj);",
+			"  ri = max(i, ri);",
+			"  rj = max(j, rj);",
+			"  }",
+			"}",
+			"",
+			"$2"
+		]
+	}
+}

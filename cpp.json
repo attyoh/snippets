@@ -1,4 +1,3 @@
-// 
 {	
 	"cout" : {
 		"prefix" : "cout",
@@ -155,13 +154,13 @@
 	"abc" : {
 		"prefix" : "abc",
 		"body" : [
-			"abcdefghijklmnopqrstuvwxyz",
+			"abcdefghijklmnopqrstuvwxyz"
 		]
 	},
 	"ABC" : {
 		"prefix" : "ABC",
 		"body" : [
-			"ABCDEJGHIJKLMNOPQRSTUVWXYZ",
+			"ABCDEJGHIJKLMNOPQRSTUVWXYZ"
 		]
 	},
 	"x.begin(),x.ene()" : {

@@ -218,8 +218,8 @@
 		"body" : [
 			"auto ten = [&](string s) {",
 			"  ll x = 0;",
-			"for (char c : s) x = x*2+(c-'0');",
-			"return x;",
+			"  for (char c : s) x = x*2+(c-'0');",
+			"  return x;",
 			"};"
 		],
         "description": "10進数変換"

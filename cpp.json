@@ -139,12 +139,6 @@
 			"pair<$1, ${2:$1}> $3;"
 		]
 	},
-	"using pair" : {
-		"prefix" : "using p",
-		"body" : [
-			"using P = pair<$1, ${2:$1}>;"
-		]
-	},
 	"using mint" : {
 		"prefix" : "mint",
 		"body" : [

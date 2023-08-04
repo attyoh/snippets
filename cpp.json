@@ -279,7 +279,7 @@
 			"sort($1.begin(), $1.end());",
 			"do{",
 			"  $2",
-			"} while(next_permutation($1.begin(), $1.end());"
+			"} while(next_permutation($1.begin(), $1.end()));"
 		]
 	},
 	"lower_bound" : {

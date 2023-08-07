@@ -1,3 +1,4 @@
+// 
 {	
 	"cout" : {
 		"prefix" : "cout",
@@ -236,6 +237,20 @@
 			"sort($1.begin(), $1.end(), greater<int>());"
 		]
 	},
+	"stable_sort" : {
+		"prefix" : "ssort",
+		"body" : [
+			"stable_sort($1.begin(), $1.end());"
+		]
+	},
+	"lambda_sort" : {
+		"prefix" : "lsort",
+		"body" : [
+			"sort($1.begin(), $1.end() [&]($2){",
+			"    $3",
+			"});"
+		]
+	},
 	"rotate" : {
 		"prefix" : "rot",
 		"body" : [
@@ -279,7 +294,7 @@
 			"sort($1.begin(), $1.end());",
 			"do{",
 			"  $2",
-			"} while(next_permutation($1.begin(), $1.end()));"
+			"} while(next_permutation($1.begin(), $1.end());"
 		]
 	},
 	"lower_bound" : {

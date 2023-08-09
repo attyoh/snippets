@@ -95,6 +95,12 @@
 			"vector<vector<string>> $1($2, vector<string>($3, string($4, '$5'));"
 		]
 	},
+	"vector<vector<bool>>" : {
+		"prefix" : "vvb",
+		"body" : [
+			"vector<vector<bool>> $1($2, vector<bool>($3));"
+		]
+	},
 	"vector<vector<vector<>>>" : {
 		"prefix" : "vvvec",
 		"body" : [
@@ -245,8 +251,8 @@
 	"lambda_sort" : {
 		"prefix" : "lsort",
 		"body" : [
-			"sort($1.begin(), $1.end() ,[&]($2){",
-			"  $3",
+			"sort($1.begin(), $1.end() [&]($2){",
+			"    $3",
 			"});"
 		]
 	},

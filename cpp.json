@@ -314,6 +314,17 @@
 			"upper_bound($1.begin(), $1.end(), $2) - $1.begin();"
 		]
 	},
+	"accumulative2" : {
+		"prefix" : "ac",
+		"body" : [
+			"rep(i,h+1)rep(j,w) $1[i][j+1] += $1[i][j];",
+			"rep(i,h)rep(j,w+1) $1[i+1][j] += $1[i][j];",
+			"auto sum = [&](int li, int lj, int ri, int rj) {",
+			"  return $1[ri][rj] - $1[li][rj] - $1[ri][lj] + $1[li][lj];",
+			"};"
+		],
+		"description": "2次元累積和"
+	},
 	"chmin" : {
 		"prefix" : "chmin",
 		"body" : [

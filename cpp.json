@@ -354,6 +354,12 @@
 			"}"
 		]
 	},
+	"space_endl" : {
+		"prefix" : "space",
+		"body" : [
+			"(i!=n-1 ? ' ' : '\n');"
+		]
+	},
 	"INF" : {
 		"prefix" : "inf",
 		"body" : [

@@ -357,7 +357,7 @@
 	"space_endl" : {
 		"prefix" : "space",
 		"body" : [
-			"(i!=n-1 ? ' ' : '\n');"
+			"(i!=n-1 ? ' ' : '\\n');"
 		]
 	},
 	"INF" : {

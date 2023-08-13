@@ -20,7 +20,7 @@
 	"printf" : {
 		"prefix" : "printf",
 		"body" : [
-			"printf(\"%d %d\", $1, $2);"
+			"printf(\"%d %d\\n\", $1, $2);"
 		]
 	},
 	"cin" : {
@@ -128,9 +128,7 @@
   "rrep" : {
     "prefix" : "rrep",
     "body" : [
-      "rep(${1:i},${2:h}) rep(${3:j},${4:w}) {",
-	  "  $5",
-	  "}"
+      "rep(${1:i},${2:h}) rep(${3:j},${4:w}) {$5}"
     ]
   },
 	"long long" : {

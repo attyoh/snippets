@@ -383,6 +383,15 @@
 			"}"
 		]
 	},
+	"bfs" : {
+		"prefix" : "bfs",
+		"body" : [
+			"while(!q.empty()) {",
+			"  ${1:auto [a,b]} = q.front(); q.pop();",
+			"  $2",
+			"}"
+		]
+	},
 	"lambda_bfs" : {
 		"prefix" : "lbfs",
 		"body" : [

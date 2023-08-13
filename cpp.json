@@ -383,8 +383,8 @@
 			"}"
 		]
 	},
-	"bfs" : {
-		"prefix" : "bfs",
+	"lambda_bfs" : {
+		"prefix" : "lbfs",
 		"body" : [
 			"auto bfs = [&](int sv) {",
 			"  const int INF = 1001001001;",
@@ -403,8 +403,8 @@
 			"};"
 		]
 	},
-	"dfs" : {
-		"prefix" : "dfs",
+	"lambda_dfs" : {
+		"prefix" : "ldfs",
 		"body" : [
 			"auto dfs = [&](auto dfs, $1) -> void {",
 			"  $2",

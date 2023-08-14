@@ -300,6 +300,17 @@
 			"} while(next_permutation($1.begin(), $1.end());"
 		]
 	},
+	"binary_search" : {
+		"prefix" : "bs",
+		"body" : [
+			"int left = $1, right = $2;",
+			"while(right - left > 1) {",
+			"  int mid = (left + right) / 2;",
+			"  if (solve(mid)) left = mid;",
+			"  else right = mid;",
+			"}"
+		]
+	},
 	"lower_bound" : {
 		"prefix" : "lb",
 		"body" : [

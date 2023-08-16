@@ -228,6 +228,21 @@
 		],
         "description": "10進数変換"
 	},
+	"N_numbers" : {
+		"prefix" : "num",
+		"body" : [
+			"auto number = [&](ll n) -> string {",
+			"  if (n==0) return \"0\";",
+			"  string res;",
+			"  while (n > 0) {",
+			"    res = char(n % $1 + '0') + res;",
+			"    n /= $1;",
+			"  }",
+			"  return res;",
+			"};"
+		],
+		"description": "10進数 -> N進数"
+	},
 	"sort" : {
 		"prefix" : "sort",
 		"body" : [

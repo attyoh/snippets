@@ -1,0 +1,13 @@
+{
+	"main" : {
+		"prefix" : "",
+		"body" : [
+			"use proconio::{input, fastout};",
+			"",
+			"#[fastout]",
+			"fn main() {",
+			"    $1",
+			"}"
+		]
+	},
+}

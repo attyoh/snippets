@@ -21,5 +21,17 @@
 		"body" : [
 			"println!(\"{$1}\", $2);"
 		]
+	},
+	"use_deque" : {
+		"prefix" : "use_dq",
+		"body" : [
+			"use std::collections::VecDeque;"
+		]
+	},
+	"deque" : {
+		"prefix" : "dq",
+		"body" : [
+			"VecDeque::new()"
+		]
 	}
 }

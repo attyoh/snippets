@@ -9,5 +9,17 @@
 			"    $1",
 			"}"
 		]
+	},
+	"input" : {
+		"prefix" : "input",
+		"body" : [
+			"input!{$1: ${2:usize}};"
+		]
+	},
+	"println!" : {
+		"prefix" : "print",
+		"body" : [
+			"println!(\"{$1}\", $2);"
+		]
 	}
 }

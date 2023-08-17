@@ -10,6 +10,12 @@
 			"}"
 		]
 	},
+	"INF" : {
+		"prefix" : "inf",
+		"body" : [
+			"std::i64::MAX"
+		]
+	},
 	"input" : {
 		"prefix" : "input",
 		"body" : [

@@ -34,5 +34,13 @@
 		"body" : [
 			"n.times.map{get.split.map(&:to_i)}"
 		]
+	},
+	"each" : {
+		"prefix" : "each",
+		"body" : [
+			"$1.each do |${2:i}|",
+			"  ",
+			"end"
+		]
 	}
 }

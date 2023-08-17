@@ -50,5 +50,17 @@
 			"  ",
 			"end"
 		]
+	},
+	"Array" : {
+		"prefix" : "arr",
+		"body" : [
+			"Array.new($1)"
+		]
+	},
+	"2Array" : {
+		"prefix" : "aaray",
+		"body" : [
+			"Array.new($1) { Array.new$2 }"
+		]
 	}
 }

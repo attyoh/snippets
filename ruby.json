@@ -1,0 +1,38 @@
+{
+	"int_input" : {
+		"prefix" : "iget",
+		"body" : [
+			"gets.to_i"
+		]
+	},
+	"string_input" : {
+		"prefix" : "sget",
+		"body" : [
+			"gets.chomp"
+		]
+	},
+	"split_input" : {
+		"prefix" : "gets",
+		"body" : [
+			"gets.split(${1:\" \"})"
+		]
+	},
+	"split_map_input" : {
+		"prefix" : "igets",
+		"body" : [
+			"gets.split(\" \"}.map(&:to_i)"
+		]
+	},
+	"times_input" : {
+		"prefix" : "times",
+		"body" : [
+			"n.times.map{get.split}"
+		]
+	},
+	"int_times_input" : {
+		"prefix" : "itimes",
+		"body" : [
+			"n.times.map{get.split.map(&:to_i)}"
+		]
+	}
+}

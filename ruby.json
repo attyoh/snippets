@@ -51,6 +51,14 @@
 			"end"
 		]
 	},
+	"times" : {
+		"prefix" : "times",
+		"body" : [
+			"$1.times do |${2:i}|",
+			"  $3",
+			"end"
+		]
+	},
 	"Array" : {
 		"prefix" : "arr",
 		"body" : [

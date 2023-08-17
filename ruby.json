@@ -60,13 +60,13 @@
 		]
 	},
 	"Array" : {
-		"prefix" : "arr",
+		"prefix" : "ar",
 		"body" : [
 			"Array.new($1)"
 		]
 	},
 	"2Array" : {
-		"prefix" : "aaray",
+		"prefix" : "aar",
 		"body" : [
 			"Array.new($1) { Array.new$2 }"
 		]

@@ -27,6 +27,12 @@
 			"println!(\"{$1}\", $2);"
 		]
 	},
+	"vec" : {
+		"prefix" : "vec",
+		"body" : [
+			"let mut $1: Vec<i64> = Vec::new()"
+		]
+	},
 	"use_deque" : {
 		"prefix" : "use_dq",
 		"body" : [

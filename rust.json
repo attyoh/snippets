@@ -39,6 +39,14 @@
 			"VecDeque::new()"
 		]
 	},
+	"lambda" : {
+		"prefix" : "lam",
+		"body" : [
+			"let $1 = |$2| {",
+			"    $3",
+			"};"
+		]
+	},
 	"for" : {
 		"prefix" : "for",
 		"body" : [

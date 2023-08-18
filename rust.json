@@ -1,10 +1,9 @@
 {
 	"main" : {
-		"prefix" : "",
+		"prefix" : "main",
 		"body" : [
-			"use proconio::{input, fastout};",
+			"use proconio::input;",
 			"",
-			"#[fastout]",
 			"fn main() {",
 			"    $1",
 			"}"
@@ -38,6 +37,14 @@
 		"prefix" : "dq",
 		"body" : [
 			"VecDeque::new()"
+		]
+	},
+	"for" : {
+		"prefix" : "for",
+		"body" : [
+			"for ${1:i} in ${2:0..n} {",
+			"    $3",
+			"}"
 		]
 	}
 }

@@ -18,7 +18,9 @@
 	"input" : {
 		"prefix" : "input",
 		"body" : [
-			"input!{$1: ${2:usize}};"
+			"input!{",
+			"    $1: ${2:usize}$3",
+			"};"
 		]
 	},
 	"println!" : {
@@ -31,6 +33,12 @@
 		"prefix" : "vec",
 		"body" : [
 			"let mut $1: Vec<i64> = Vec::new()"
+		]
+	},
+	"vvec" : {
+		"prefix" : "vvec",
+		"body" : [
+			"let mut $1: Vec<Vec<${2:usize}>> = ${3:vec![vec![]; ${4:n}]};"
 		]
 	},
 	"use_deque" : {

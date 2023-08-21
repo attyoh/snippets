@@ -28,7 +28,7 @@
 		]
 	},
 	"list(map(int, input().split()))" : {
-		"prefix" : "lis",
+		"prefix" : "lmis",
 		"body" : [
 			"list(map(int, input().split()))"
 		]
@@ -67,6 +67,13 @@
 			"        $5"
 		]
 	},
+	"lcm" : {
+		"prefix" : "lcm",
+		"body" : [
+			"def lcm(a,b):",
+			"    return a*b // math.gcd(a,b)"
+		]
+	},
 	"itertools.permutations(iterable, r)" : {
 		"prefix" : "iterp",
 		"body" : [
@@ -79,7 +86,7 @@
 			"itertools.combinations($1, $2)"
 		]
 	},
-	"accumulate(iterable" : {
+	"accumulate_iterable" : {
 		"prefix" : "acc",
 		"body" : [
 			"accumulate($1)"

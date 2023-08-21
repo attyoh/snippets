@@ -312,7 +312,7 @@
 			"sort($1.begin(), $1.end());",
 			"do{",
 			"    $2",
-			"} while(next_permutation($1.begin(), $1.end());"
+			"} while(next_permutation($1.begin(), $1.end()));"
 		]
 	},
 	"binary_search" : {
@@ -382,6 +382,12 @@
 		"prefix" : "space",
 		"body" : [
 			"(i!=n-1 ? ' ' : '\\n');"
+		]
+	},
+	"POW18" : {
+		"prefix" : "pow18",
+		"body" : [
+			"ll pow18 = 1000000000000000000LL;"
 		]
 	},
 	"INF" : {

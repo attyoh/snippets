@@ -213,7 +213,7 @@
 		"prefix" : "lam",
 		"body" : [
 			"auto $1 = [&]($2) {",
-			"  $3",
+			"    $3",
 			"};"
 		]
 	},
@@ -401,6 +401,15 @@
 		"body" : [
 			"#include <atcoder/all>",
 			"using namespace atcoder;"
+		]
+	},
+	"lcm" : {
+		"prefix" : "lcm",
+		"body" : [
+			"auto lcm = [&](ll a, ll b) {",
+			"    ll ret = a * b / gcd(a,b);",
+			"    return ret;",
+			"};"
 		]
 	},
 	"isPalindrome" : {

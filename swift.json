@@ -31,5 +31,13 @@
 		"body" : [
 			"readLine()!.split(separator: \" \").map{Int(\\$0)!}"
 		]
+	},
+	"for" : {
+		"prefix" : "for",
+		"body" : [
+			"for $1 in ${2:0 ..< ${3:n}} {",
+			"    ",
+			"}"
+		]
 	}
 }

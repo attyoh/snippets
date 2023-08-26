@@ -1,0 +1,11 @@
+{
+	"main" : {
+		"prefix" : "main",
+		"body" : [
+			"func main() {",
+			"    ",
+			"}",
+			"main()"
+		]
+	}
+}

@@ -7,5 +7,29 @@
 			"}",
 			"main()"
 		]
+	},
+	"readline" : {
+		"prefix" : "read",
+		"body" : [
+			"readLine()!"
+		]
+	},
+	"Int_readline" : {
+		"prefix" : "iread",
+		"body" : [
+			"Int(readLine()!)!"
+		]
+	},
+	"split_readline" : {
+		"prefix" : "reads",
+		"body" : [
+			"readLine()!.split(separator: \" \")"
+		]
+	},
+	"Int_split_readline" : {
+		"prefix" : "ireads",
+		"body" : [
+			"readLine()!.split(separator: \" \").map{Int(\\$0)!}"
+		]
 	}
 }

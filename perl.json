@@ -18,5 +18,11 @@
 		"body" : [
 			"split(' ', <STDIN>);"
 		]
+	},
+	"endl" : {
+		"prefix" : "endl",
+		"body" : [
+			" . \"\\n\""
+		]
 	}
 }

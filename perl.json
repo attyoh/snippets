@@ -1,0 +1,10 @@
+{
+	"main" : {
+		"prefix" : "main",
+		"body" : [
+			"#!/usr/bin/perl",
+			"",
+			"$1"
+		]
+	}
+}

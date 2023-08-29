@@ -33,6 +33,12 @@
 			"}"
 		]
 	},
+	"print" : {
+		"prefix" : "print",
+		"body" : [
+			"print $1 . \"\\n\";"
+		]
+	},
 	"sub" : {
 		"prefix" : "sub",
 		"body" : [

@@ -46,5 +46,14 @@
 			"    my $2 = @_;",
 			"}"
 		]
+	},
+	"swap" : {
+		"prefix" : "swap",
+		"body" : [
+			"sub swap {",
+			"    my ($list_ref, $index1, $index2) = @_;",
+			"    @$list_ref[$index1, $index2] = @$list_ref[$index2, $index1];",
+			"}"
+		]
 	}
 }

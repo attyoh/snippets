@@ -16,7 +16,7 @@
 	"STDINs" : {
 		"prefix" : "ins",
 		"body" : [
-			"split(' ', <STDIN>);"
+			"split \/\\s+\/, <STDIN>;"
 		]
 	},
 	"endl" : {

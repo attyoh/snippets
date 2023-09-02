@@ -39,7 +39,7 @@
 	"print" : {
 		"prefix" : "print",
 		"body" : [
-			"print $1 . \"\\n\";"
+			"print \"$1\\n\";"
 		]
 	},
 	"sub" : {

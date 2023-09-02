@@ -61,5 +61,11 @@
 		"body" : [
 			"$1 = sort {$a <=> $b } @$1;"
 		]
+	},
+	"rsort" : {
+		"prefix" : "rsort",
+		"body" : [
+			"$1 = sort {$b <=> $a } @$1;"
+		]
 	}
 }

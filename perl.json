@@ -4,7 +4,10 @@
 		"body" : [
 			"#!/usr/bin/perl",
 			"",
-			"$1"
+			"sub main {",
+			"    $1",
+			"}",
+			"main();"
 		]
 	},
 	"STDIN" : {

@@ -36,10 +36,18 @@
 			"}"
 		]
 	},
+	"foreach" : {
+		"prefix" : "each",
+		"body" : [
+			"foreach (@$1) {",
+			"    $2",
+			"}"
+		]
+	},
 	"print" : {
 		"prefix" : "print",
 		"body" : [
-			"print \"$1\\n\";"
+			"print $1 . \"\\n\";"
 		]
 	},
 	"sub" : {

@@ -10,6 +10,12 @@
 			"main();"
 		]
 	},
+	"bigint" : {
+		"prefix" : "ll",
+		"body" : [
+			"use bigint lib => 'GMP';"
+		]
+	},
 	"STDIN" : {
 		"prefix" : "in",
 		"body" : [

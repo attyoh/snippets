@@ -10,6 +10,12 @@
 			"main();"
 		]
 	},
+	"use_integer" : {
+		"prefix" : "use_i",
+		"body" : [
+			"use integer;"
+		]
+	},
 	"bigint" : {
 		"prefix" : "ll",
 		"body" : [

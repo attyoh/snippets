@@ -22,6 +22,12 @@
 			"use bigint lib => 'GMP';"
 		]
 	},
+	"mod_1001001001" : {
+		"prefix" : "mod",
+		"body" : [
+			"my \\$MOD = 1001001001;"
+		]
+	},
 	"STDIN" : {
 		"prefix" : "in",
 		"body" : [

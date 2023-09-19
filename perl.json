@@ -28,6 +28,12 @@
 			"my \\$MOD = 1001001001;"
 		]
 	},
+	"mod_107" : {
+		"prefix" : "107",
+		"body" : [
+			"my \\$MOD = 1e9 + 7;"
+		]
+	},
 	"STDIN" : {
 		"prefix" : "in",
 		"body" : [

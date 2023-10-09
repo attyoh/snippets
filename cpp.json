@@ -453,11 +453,11 @@
 	"isPalindrome" : {
 		"prefix" : "ispal",
 		"body" : [
-			"auto isPalindrome(string s) -> bool {",
+			"auto isPalindrome = [&](string s) -> bool {",
 			"    string t = s;",
 			"    reverse(t.begin(), t.end());",
 			"    return s == t;",
-			"}"
+			"};"
 		]
 	},
 	"longestPalindrome" : {

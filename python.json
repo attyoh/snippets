@@ -18,7 +18,7 @@
 	"deque" : {
 		"prefix" : "dq",
 		"body" : [
-			"from collections import deque"
+			"from collections import deque",
 		]
 	},
 	"input().split()" : {
@@ -105,5 +105,22 @@
 			"chain.from_iterable($1)"
 		],
         "description": "二次元配列での平坦化など"
+	},
+	"prime_factors" : {
+		"prefix" : "prime",
+		"body" : [
+			"def prime_factors(n):",
+			"factors = []",
+			"i = 2",
+			"while i*i <= n:",
+			"	while n%i == 0:",
+			"		factors.append(i)",
+			"		n //= i",
+			"	i += 1",
+			"if n != 1:",
+			"	factors.append(n)",
+			"return factors"
+		],
+        "description": "素因数分解"
 	}
 }

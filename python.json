@@ -18,8 +18,15 @@
 	"deque" : {
 		"prefix" : "dq",
 		"body" : [
-			"from collections import deque",
+			"from collections import deque"
 		]
+	},
+	"bisect" : {
+		"prefix" : "bisect",
+		"body" : [
+			"from bisect import bisect"
+		],
+		"description": "lower_bound"	
 	},
 	"input().split()" : {
 		"prefix" : "is",

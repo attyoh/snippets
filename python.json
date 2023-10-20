@@ -113,6 +113,23 @@
 		],
         "description": "二次元配列での平坦化など"
 	},
+	"bfs" : {
+		"prefix" : "bfs",
+		"body" : [
+			"def bfs(s):",
+			"    dist = [-1] * n",
+			"    dist[s] = 0",
+			"    q = deque([s])",
+			"    while q:",
+			"        v = q.popleft()",
+			"        for nv in g[v]:",
+			"            if dist[nv] != -1:",
+			"                continue",
+			"            dist[nv] = dist[v] + 1",
+			"            q.append(nv)",
+			"    return dist"
+		]
+	},	
 	"prime_factors" : {
 		"prefix" : "prime",
 		"body" : [

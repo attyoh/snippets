@@ -80,6 +80,12 @@
 			"        $5"
 		]
 	},
+	"filter" : {
+		"prefix" : "fil",
+		"body" : [
+			"list(filter(lambda x: $1, $2))"
+		]
+	},
 	"lcm" : {
 		"prefix" : "lcm",
 		"body" : [

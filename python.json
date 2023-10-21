@@ -130,6 +130,16 @@
 			"    return dist"
 		]
 	},	
+	"dfs" : {
+		"prefix" : "dfs",
+		"body" : [
+			"import sys",
+			"sys.setrecursionlimit(10**9)",
+			"",
+			"def dfs():",
+			"    $1"
+		]
+	},
 	"prime_factors" : {
 		"prefix" : "prime",
 		"body" : [

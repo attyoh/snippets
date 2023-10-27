@@ -41,6 +41,12 @@
 			"cin >> $1 >> $2 >> $3;"
 		]
 	},
+	"ccccin" : {
+		"prefix" : "ccccin",
+		"body" : [
+			"cin >> $1 >> $2 >> $3 >> $4;"
+		]
+	},
 	"vector" : {
 		"prefix" : "vec",
 		"body" : [

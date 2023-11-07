@@ -580,6 +580,26 @@
 			"};"
 		]
 	},
+	"bipartite_graph_dfs" : {
+		"prefix" : "bdfs",
+		"body" : [
+			"vector<bool> seen(n);",
+			"vector<int> color(n);",
+			"string ans = \"Yes\";",
+			"auto dfs = [&](auto dfs, int v, int col) -> void {",
+			"    seen[v] = 1;",
+			"    color[v] = col;",
+			"    for (int e : G[v]) {",
+			"        if (seen[e]) {",
+			"            if (color[e] == color[v]) ans = \"No\";",
+			"            continue;",
+			"        }",
+			"        dfs(dfs,e,3-col);",
+			"    }",
+			"};"
+		],
+		"description": "ニ部グラフ判定"
+	},
 	"prime_factors" : {
 		"prefix" : "prime_f",
 		"body" : [

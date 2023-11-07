@@ -621,6 +621,25 @@
 		],
 		"description": "トポロジカルソート"
 	},
+	"cycle_dfs" : {
+		"prefix" : "cdfs",
+		"body" : [
+			"vector<bool> seen(n), finished(n);",
+			"string ans = \"No\";",
+			"auto dfs = [&](auto dfs, int v) -> void {",
+			"    seen[v] = true;",
+			"    for (int e : G[v]) {",
+			"        if (seen[e]) {",
+			"            if (!finished[e]) ans = \"Yes\";",
+			"            continue;",
+			"        }",
+			"        dfs(dfs,e);",
+			"    }",
+			"    finished[v] = true;",
+			"};"
+		],
+		"description": "サイクル検出"
+	},
 	"prime_factors" : {
 		"prefix" : "prime_f",
 		"body" : [

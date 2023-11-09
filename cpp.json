@@ -600,6 +600,27 @@
 		],
 		"description": "ニ部グラフ判定"
 	},
+	"tporogical_dfs" : {
+		"prefix" : "tdfs",
+		"body" : [
+			"vector<int> seen(n), ans;",
+			"auto dfs = [&](auto dfs, int v) -> void {",
+			"    seen[v] = 1;",
+			"    for (int e : G[v]) {",
+			"        if (seen[e]) continue;",
+			"        dfs(dfs,e);",
+			"    }",
+			"    ans.push_back(v);",
+			"};",
+			"", 
+			"for (int i=0; i<n; i++) {",
+			"    if (seen[i]) continue;",
+			"    dfs(dfs,i);",
+			"}",
+			"reverse(ans.begin(),ans.end());"
+		],
+		"description": "トポロジカルソート"
+	},
 	"prime_factors" : {
 		"prefix" : "prime_f",
 		"body" : [

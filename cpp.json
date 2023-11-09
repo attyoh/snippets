@@ -569,7 +569,7 @@
 			"    q.push(sv); dist[sv] = 0;",
 			"    while(!q.empty()) {",
 			"        int v = q.front(); q.pop();",
-			"        for (int u : to[v]) {",
+			"        for (int u : G[v]) {",
 			"            if (dist[u] != INF) continue;",
 			"            dist[u] = dist[v] + 1;",
 			"            q.push(u);",
@@ -754,14 +754,14 @@
 		"body" : [
 			"int n, m;",
 			"cin >> n >> m;",
-			"vector<vector<int>> to(n);",
+			"vector<vector<int>> G(n);",
 
 			"rep(i,m) {",
 			"    int a, b;",
 			"    cin >> a >> b;",
 			"    --a; --b;",
-			"    to[a].push_back(b);",
-			"    to[b].push_back(a);",
+			"    G[a].push_back(b);",
+			"    G[b].push_back(a);",
 			"}"
 		]
 	},

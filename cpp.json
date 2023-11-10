@@ -665,7 +665,7 @@
 			"        return *max_element(dist_mx.begin(), dist_mx.end());",
 			"    }",
 			"",
-			"    // 根をvとした時の各店の深さ",
+			"    // 根をvとした時の各点の深さ",
 			"    vector<int> getDepth(int v) {",
 			"        vector<int> dist(n, -1);",
 			"        bfs(v, dist);",

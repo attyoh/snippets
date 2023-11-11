@@ -311,6 +311,12 @@
 			"find($1.begin(), $1.end(), $2);"
 		]
 	},
+	"nofind" : {
+		"prefix" : "no",
+		"body" : [
+			"string::npos"
+		]
+	},	
 	"reverse" : {
 		"prefix" : "rev",
 		"body" : [

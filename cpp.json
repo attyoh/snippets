@@ -596,17 +596,14 @@
 	"bipartite_graph_dfs" : {
 		"prefix" : "bdfs",
 		"body" : [
-			"vector<int> colors(n);",
-			"string ans = \"Yes\";",
-			"auto dfs = [&](auto dfs, int v, int c) -> void {",
-			"    colors[v] = c;",
+			"vector<int> color(n);",
+			"auto dfs = [&](auto dfs, int v, int c=1) -> bool {",
+			"    if (color[v]) return color[v] == c;",
+			"    color[v] = c;",
 			"    for (int nv : G[v]) {",
-			"        if (colors[nv]) {",
-			"            if (colors[nv] == colors[v]) ans = \"No\";",
-			"            break;",
-			"        }",
-			"        dfs(dfs,nv,3-c);",
+			"        if (!dfs(dfs,nv,3-c)) return false;",
 			"    }",
+			"    return true;",
 			"};"
 		],
 		"description": "ニ部グラフ判定"

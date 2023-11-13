@@ -596,18 +596,16 @@
 	"bipartite_graph_dfs" : {
 		"prefix" : "bdfs",
 		"body" : [
-			"vector<bool> seen(n);",
 			"vector<int> colors(n);",
 			"string ans = \"Yes\";",
 			"auto dfs = [&](auto dfs, int v, int c) -> void {",
-			"    seen[v] = true;",
 			"    colors[v] = c;",
 			"    for (int nv : G[v]) {",
-			"        if (seen[nv]) {",
+			"        if (colors[nv]) {",
 			"            if (colors[nv] == colors[v]) ans = \"No\";",
 			"            break;",
 			"        }",
-			"        dfs(dfs, nv, 3-c);",
+			"        dfs(dfs,nv,3-c);",
 			"    }",
 			"};"
 		],

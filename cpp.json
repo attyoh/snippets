@@ -596,16 +596,14 @@
 		"prefix" : "bdfs",
 		"body" : [
 			"vector<int> color(n);",
-			"string ans = \"Yes\";",
-			"auto dfs = [&](auto dfs, int v, int col) -> void {",
-			"    seen[v] = 1;",
-			"    color[v] = col;",
+			"auto dfs = [&](auto dfs, int v, int c=1) -> bool {",
+			"    if (color[v]) return color[v] == c;",
+			"    color[v] = c;",
 			"    for (int nv : G[v]) {",
-			"        if (seen[nv]) {",
-			"            if (color[nv] == color[v]) ans = \"No\";",
-			"            continue;",
-			"        }",
-			"        dfs(dfs,nv,3-col);",
+			"        if (!dfs(dfs,nv,3-c)) return false;",
+			"    }",
+			"    return true;",
+			"};"
 		],
 		"description": "ニ部グラフ判定"
 	},

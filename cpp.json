@@ -191,6 +191,12 @@
 			"unordered_set<$1> $2;"
 		]
 	},
+	"unique" : {
+		"prefix" : "uniq",
+		"body" : [
+			"$1.erase(unique($1.begin(), $1.end()), $1.end());"
+		]
+	},	
 	"insert" : {
 		"prefix" : "ins",
 		"body" : [

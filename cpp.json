@@ -360,14 +360,17 @@
 		]
 	},
 	"def_binary_search" : {
-		"prefix" : "dbs",
+		"prefix" : "lbs",
 		"body" : [
-			"int left = $1, right = $2;",
-			"while(right - left > 1) {",
-			"    int mid = (left + right) / 2;",
-			"    if (solve(mid)) left = mid;",
-			"    else right = mid;",
-			"}"
+			"auto bs = [&]($1) {",
+			"    int left = ${2:-1}, right = $3;",
+			"    while(abs(right - left) > 1) {",
+			"        int mid = (left + right) / 2;",
+			"        if ($4) right = mid;",
+			"        else left = mid;",
+			"    }",
+			"    return right;",
+			"};"
 		]
 	},
 	"lower_bound" : {

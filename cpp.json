@@ -140,7 +140,7 @@
 	"long long" : {
 		"prefix" : "ll",
 		"body" : [
-			"long long $1;"
+			"using ll = long long;"
 		]
 	},
 	"pair" : {
